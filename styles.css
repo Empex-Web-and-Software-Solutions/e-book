@@ -14,33 +14,34 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    /*max-width: 500px;*/
-    width: 75%;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
     box-sizing: border-box;
     text-align: center;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #333333;
 }
 
 .ebook-cover {
-    max-width: 500px;
+    max-width: 100%;
     height: auto;
-   /* margin-bottom: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 p {
-    font-size: 16px;
+    font-size: 1em;
     margin-bottom: 20px;
     color: #666666;
     line-height: 1.6;
-    width: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 form {
@@ -51,9 +52,10 @@ form {
 
 input[type="email"] {
     padding: 15px;
-    font-size: 16px;
+    font-size: 1em;
     margin-bottom: 10px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     box-sizing: border-box;
     border: 1px solid #dddddd;
     border-radius: 5px;
@@ -67,7 +69,7 @@ input[type="email"]:focus {
 
 button {
     padding: 15px;
-    font-size: 16px;
+    font-size: 1em;
     background-color: #007BFF;
     color: white;
     border: none;
@@ -85,35 +87,34 @@ button:not(:disabled):hover {
     background-color: #0056b3;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     h1 {
-        font-size: 22px;
+        font-size: 2em;
     }
 
     p {
-        font-size: 14px;
+        font-size: 0.9em;
     }
 
     input[type="email"],
     button {
         padding: 12px;
-        font-size: 14px;
+        font-size: 0.9em;
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 20px;
+        font-size: 1.5em;
     }
 
     p {
-        font-size: 12px;
+        font-size: 0.8em;
     }
 
     input[type="email"],
     button {
         padding: 10px;
-        font-size: 12px;
+        font-size: 0.8em;
     }
 }
