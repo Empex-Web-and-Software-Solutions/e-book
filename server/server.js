@@ -11,7 +11,7 @@ const app = express();
 app.use(cors()); 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public'))); 
+app.use(express.static(path.join(__dirname, '..'))); 
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.ionos.co.uk',
@@ -23,13 +23,13 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-/*app.get('/', (req, res) => {
-    res.send('E-book backend is running');
-});*/
-
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'index.html'));
+    res.send('E-book backend is running');
 });
+
+/*app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'index.html'));
+});*/
 
 app.post('/send-email', (req, res) => {
     const userEmail = req.body.email;
