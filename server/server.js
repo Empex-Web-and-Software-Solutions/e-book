@@ -37,12 +37,12 @@ app.post('/send-email', (req, res) => {
         subject: 'Your FREE E-book!',
         html: `
             <div style="font-family: Arial, sans-serif; color: #333; padding: 20px; text-align: center;">
-                <h2>Thank you for requesting our e-book!</h2>
+                <h2>Thank you for requesting our FREE e-book!</h2>
                 <p>We hope you find it valuable for your business growth. Click the button below to download your e-book.</p>
                 <a href="${ebookLink}" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: #fff; background-color: #007BFF; text-decoration: none; border-radius: 5px;">Download E-book</a>
                 <p>If the button doesn't work, you can copy and paste the following link into your browser:</p>
                 <p><a href="${ebookLink}">${ebookLink}</a></p>
-                <p>Best regards,<br>Your Company Name</p>
+                <p>Best regards,<br>Vaidas Simkus</p>
             </div>
         `
     };
