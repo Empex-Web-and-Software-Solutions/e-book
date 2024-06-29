@@ -23,6 +23,10 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+app.get('/', (req, res) => {
+    res.send('E-book backend is running');
+});
+
 app.post('/send-email', (req, res) => {
     const userEmail = req.body.email;
     const ebookLink = 'https://storage.googleapis.com/e-book-bucket/Website%20Magic%20for%20Business%20Growth.pdf'; 
