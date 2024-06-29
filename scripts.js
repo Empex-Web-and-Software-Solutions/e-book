@@ -9,9 +9,10 @@ document.getElementById('email-form').addEventListener('submit', function(event)
         },
         body: JSON.stringify({ email: email })
     })
-    .then(response => response.text())
+    .then(response => response.json())
     .then(data => {
         alert('Download link has been sent to your email.');
+        document.getElementById('email-form').reset();
     })
     .catch(error => {
         alert('Error sending email. Please try again later.');
