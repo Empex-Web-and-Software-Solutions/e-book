@@ -9,7 +9,7 @@ document.getElementById('email-form').addEventListener('submit', function(event)
         },
         body: JSON.stringify({ email: email })
     })
-    .then(response => response.json())
+    .then(response => response.text())
     .then(data => {
         alert('Download link has been sent to your email.');
         document.getElementById('email-form').reset();
