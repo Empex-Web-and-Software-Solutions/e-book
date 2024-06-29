@@ -2,7 +2,7 @@ document.getElementById('email-form').addEventListener('submit', function(event)
     event.preventDefault();
     const email = document.getElementById('email').value;
 
-    fetch('https://e-book-backend-3a119580cbea.herokuapp.com//send-email', {
+    fetch('https://e-book-backend-3a119580cbea.herokuapp.com/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
