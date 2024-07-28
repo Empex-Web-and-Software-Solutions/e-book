@@ -90,14 +90,14 @@ button:not(:disabled):hover {
 }
 
 footer {
-    background-color: #f4f7f6;
+    background-color: white;
     padding: 20px;
     text-align: center;
     font-size: 14px;
     color: #6c757d;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    
 }
 
 /*.footer-content {
