@@ -87,6 +87,14 @@ button:not(:disabled):hover {
     background-color: #0056b3;
 }
 
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2em;
