@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .container {
@@ -95,6 +95,8 @@ footer {
     text-align: center;
     font-size: 14px;
     color: #6c757d;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-content {
