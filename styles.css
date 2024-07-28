@@ -89,22 +89,6 @@ button:not(:disabled):hover {
     background-color: #0056b3;
 }
 
-footer {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #6c757d;
-    position: absolute;
-    bottom: 0;
-    
-}
-
-/*.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
 
 @media (max-width: 768px) {
     h1 {
@@ -135,11 +119,5 @@ footer {
     button {
         padding: 10px;
         font-size: 0.8em;
-    }
-}
-
-@media (max-width: 600px) {
-    footer {
-        font-size: 12px;
     }
 }
